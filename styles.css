@@ -10,12 +10,15 @@ body {
 section {  
     width: 70%;
     float: left; 
+    font-size: 1.1em;
 }
+
 #wrapper {
     width: 100%;
     border: 2px solid black;
     background-color: hotpink;
     display: inline-block;
+    padding: 20px 0px;
 }
 .news {
    width: 50%;
@@ -30,16 +33,26 @@ section {
    border-bottom: 1px dotted black;
    padding-bottom: 18px;
 }
+.wrapDiv {
+    /*display: block;*/
+    width: 250px;
+    height: 50px;
+}
 .titleNews {
+    display: block;
     position: absolute;
-    top: 200px;
-    left: 200px;
+    top: 190px;
+    left: 110.8px;
     background-color: white;
+}
+.titleNews a {
+    display: block;
+    padding-bottom: 5px;
 }
 .titleNews10 {
     position: absolute;
-    top: 185px;
-    left: 195px;
+    top: 190px;
+    left: 109.6px;
     background-color: white;
 }
 .news .dottedBorder {
@@ -50,11 +63,16 @@ section {
 }
 
 
+
+
+
+
+
 /*hover effects over news images*/
 .newsEffects {
     display: inline-block;
-    width: 300px;
-    height: 200px;
+    width: 17.05em;
+    height: 11.8em;
     padding: 0px 5px 0px 5px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -66,34 +84,34 @@ section {
     background-size: 130% 130%;
 }
 .pic1 {
-    background-image: url("images/index.jpg");
+    background-image: url("images/img1.jpg");
 }
 .pic2 {
-    background-image: url("images/index3.jpg");
+    background-image: url("images/img2.jpg");
 }
 .pic3 {
-    background-image: url("images/index3.jpg");
+    background-image: url("images/img3.jpg");
 }
 .pic4 {
-    background-image: url("images/index3.jpg");
+    background-image: url("images/img4.jpg");
 }
 .pic5 {
-    background-image: url("images/index3.jpg");
+    background-image: url("images/img5.jpg");
 }
 .pic6 {
-    background-image: url("images/index3.jpg");
+    background-image: url("images/img6.jpg");
 }
 .pic7 {
-    background-image: url("images/index3.jpg");
+    background-image: url("images/img7.jpg");
 }
 .pic8 {
-    background-image: url("images/index3.jpg");
+    background-image: url("images/img8.jpg");
 }
 .pic9 {
-    background-image: url("images/index3.jpg");
+    background-image: url("images/img9.jpg");
 }
 .pic10 {
-    background-image: url("images/index3.jpg");
+    background-image: url("images/img10.jpg");
 }
 
 /*aside*/
@@ -111,6 +129,40 @@ aside {
 }
 
 
+@media only screen and (max-width: 1024px) {
+     section {
+         width: 100%;
+     }
+     .news {
+         width: 20%;
+         float: left;
+         padding: 0;
+         margin: 0;
+     }
+     .dot {
+         display: none;
+     }
+     #banner {
+         display: none;
+     }
+     .newsEffects {
+         width: 150px;
+         height: 120px;
+         float: left;
+     }
+     .wrapDiv {
+        display: none;
+     }
+     .subtitleNews {
+         display: none;
+     }
+     .titleNews, .titleNews10  {
+         display: none;
+     }
+     
+
+}
+
 
 
 
@@ -118,6 +170,7 @@ aside {
 #redaction {
     width: 70%;
     background-color: turquoise;
+    margin: 20px 0px;
 }
 #redaction h2, span {
     padding: 10px;
@@ -133,6 +186,16 @@ aside {
     height: 160px;
     border-radius: 50%;
     border: 6px solid red;
+}
+#arrow {
+    display: inline-block;
+    /*background-color: white;*/
+
+    /*border-radius: 70%;*/
+    /*width: 120px;*/
+}
+#arrow span {
+    background-image: url("images/arrow.png");
 }
 
 
@@ -152,14 +215,72 @@ aside {
     background-size: 130% 130%;
 }
 .a {
-    background-image: url("images/index.jpg");
+    background-image: url("images/images1.jpg");
 }
 .b {
-    background-image: url("images/index2.jpg");
+    background-image: url("images/images2.jpg");
 }
 .c {
-    background-image: url("images/index3.jpg");
+    background-image: url("images/images3.jpg");
 }
 .d {
-    background-image: url("images/index4.jpg");
+    background-image: url("images/images4.jpg");
+}
+
+
+
+
+/*third part images with JS - FREE TIME*/
+#wrapImgJS {
+    display: inline-block;
+    width: 100%;
+}
+.pics {
+    display: block;
+    float: left;
+    width: 40%;
+}
+
+/*#wrapImgJS {
+    position: relative;
+    padding: 20px 0;
+}
+
+.abc {
+    display: block;
+    float: left;
+    position: absolute;
+    width: 17.05em;
+    height: 11.8em;
+    padding: 20px 5px;
+    text-align: center;
+    top: 90px; 
+}
+
+.imageJS {
+    display: block;
+    float: left;
+    width: 17.05em;
+    height: 11.8em;
+    border: 2px solid black;
+    margin-right: 10px;
+}*/
+#scroller {
+    width: 17.05em;
+    height: 11.8em;
+    background-image:url("images/jsImg1.jpg");
+    background-size: 300px; 
+}
+#scroller2 {
+    width: 17.05em;
+    height: 11.8em;
+    background-image:url("images/jsImg2.jpg"); 
+    background-size: 300px; 
+}
+.text {
+    display: block;
+    width: 90%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px #000000;
 }
