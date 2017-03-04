@@ -15,8 +15,8 @@ section {
 
 #wrapper {
     width: 100%;
-    border: 2px solid black;
-    background-color: hotpink;
+    /*border: 2px solid black;*/
+    background-color: rosybrown;
     display: inline-block;
     padding: 20px 0px;
 }
@@ -43,7 +43,7 @@ section {
     position: absolute;
     top: 190px;
     left: 110.8px;
-    background-color: white;
+    background-color: rosybrown;
 }
 .titleNews a {
     display: block;
@@ -53,7 +53,7 @@ section {
     position: absolute;
     top: 190px;
     left: 109.6px;
-    background-color: white;
+    background-color: rosybrown;
 }
 .news .dottedBorder {
     display: inline-block;
@@ -121,8 +121,8 @@ aside {
 }
 .wrap-aside {
    width: 100%;
-   border: 2px solid black;
-   background-color: lawngreen;
+   /*border: 2px solid black;*/
+   background-color: palegreen;
    margin: 0 auto;
    padding: 10px;
    text-align: center;
@@ -169,11 +169,12 @@ aside {
 /*redaction*/
 #redaction {
     width: 70%;
-    background-color: turquoise;
+    background-color: tan;
     margin: 20px 0px;
 }
-#redaction h2, span {
+#arrow {
     padding: 10px;
+    text-transform: uppercase;
 }
 .roundedPic {
     display: block;
@@ -189,15 +190,15 @@ aside {
 }
 #arrow {
     display: inline-block;
-    /*background-color: white;*/
-
-    /*border-radius: 70%;*/
-    /*width: 120px;*/
 }
-#arrow span {
-    background-image: url("images/arrow.png");
+#arrow img {
+    width: 30px;
+    height: 30px;
+    vertical-align: -10px;
 }
-
+#span2016 {
+    display: block;
+}
 
 /*hover effects over rounded images*/
 .effects {
@@ -231,51 +232,52 @@ aside {
 
 
 /*third part images with JS - FREE TIME*/
+#cookingBooks {
+    background-color: mediumaquamarine;
+}
 #wrapImgJS {
     display: inline-block;
     width: 100%;
+    box-sizing: border-box;
 }
 .pics {
     display: block;
     float: left;
-    width: 40%;
+    width: 35%;
+  
 }
-
-/*#wrapImgJS {
-    position: relative;
-    padding: 20px 0;
+#cook {
+    font-size: 2em;
+    padding: 10px;
 }
-
-.abc {
-    display: block;
-    float: left;
-    position: absolute;
-    width: 17.05em;
-    height: 11.8em;
-    padding: 20px 5px;
-    text-align: center;
-    top: 90px; 
-}
-
-.imageJS {
-    display: block;
-    float: left;
-    width: 17.05em;
-    height: 11.8em;
-    border: 2px solid black;
-    margin-right: 10px;
-}*/
 #scroller {
-    width: 17.05em;
-    height: 11.8em;
+    width: 15em;
+    height: 18em;
     background-image:url("images/jsImg1.jpg");
-    background-size: 300px; 
+    background-size: 400px; 
+    margin-left: 10px;
 }
 #scroller2 {
-    width: 17.05em;
-    height: 11.8em;
+    width: 15em;
+    height: 18em;
     background-image:url("images/jsImg2.jpg"); 
     background-size: 300px; 
+}
+#scroller3 {
+    width: 12em;
+    height: 8.72em;
+    background-image:url("images/jsImg3.jpg"); 
+    background-size: 212px; 
+    margin-left: 24px;
+   
+}
+#scroller4 {
+    width: 12em;
+    height: 8.72em;
+    background-image:url("images/jsImg4.jpg"); 
+    background-size: 212px; 
+    margin-top: 10px;
+    margin-left: 24px;
 }
 .text {
     display: block;
@@ -283,4 +285,116 @@ aside {
     text-align: center;
     color: white;
     text-shadow: 2px 2px 8px #000000;
+}
+
+#asideDiv {
+    display: block;
+    float: left;
+    /*background-color: orangered;*/
+    width: 13.5em;
+    height: 18em;
+}
+
+
+
+/*VIDOS*/
+#videos {
+    padding-top: 10px;
+    width: 100%;
+}
+.videosChild {
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+/*slideShow*/
+#childrenBook {
+    background-color: sandybrown;
+    margin-top: 20px;
+}
+#slideShow {
+    display: inline-block;
+    width: 100%;
+    padding-top: 20px;
+}
+.mySlides img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    text-align: center; 
+}
+.mySlides p {
+    text-align: center;
+    padding: 5px;
+}
+#btns {
+    position: relative;
+    width: 100%;
+}
+#button-left {
+    position: absolute;
+    bottom: 140px;
+    left: 0px;
+}
+#button-right {
+    position: absolute;
+    bottom: 140px;
+    right: 0px;
+}
+#childrensTime {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+
+/*Popular books of the week*/
+#mostPopularChildrensBooks {
+    font-size: 1.5em;
+    padding: 10px 0;
+}
+#weekBooks {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.popularWeekBook .centerA {
+    display: block;
+    float: left;
+    width: 20%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.centerA img {
+    width: 145.75px;
+    height: 220px;
+    text-align: center; 
+}
+.centerA a {
+    display: block;
+    text-align: center;
+    padding: 2px;
+    box-sizing: border-box;
+}
+.makeItalic {
+    font-style: italic;
+    color: firebrick;
+}
+
+
+
+/*FOOTER*/
+#footer1 {
+    width: 100%;
+    display: inline-block;
+}
+#footer1 .footer1Div {
+    display: block;
+    float: left;
+    width: 33.33%;
+}
+.footer1Div img {
+    width: 200px;
+    height: 200px;
 }
