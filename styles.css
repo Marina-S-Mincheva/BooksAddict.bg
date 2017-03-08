@@ -385,16 +385,95 @@ aside {
 
 
 /*FOOTER*/
+/*#thumb {
+    display: inline-block;
+}*/
 #footer1 {
     width: 100%;
+    /*position: relative;*/
     display: inline-block;
+    /*margin-bottom: 100px;*/
+    border: 1px solid black;
 }
-#footer1 .footer1Div {
+.footer1Div {
     display: block;
     float: left;
     width: 33.33%;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
 }
-.footer1Div img {
-    width: 200px;
-    height: 200px;
+
+/*thumbnail*/
+#thumb {
+    position: relative;
+}
+
+.thumbnail1, .thumbnail2, .thumbnail3 {
+    width: 80px;
+    height: 80px;
+    float: left;
+    padding-right: 7px;
+    /*position: absolute;
+    bottom: 50px;
+    right: 10px;*/
+}
+/*.textThumb {
+    padding-left: 5px;
+}*/
+.titleThumb {
+    display: block;
+    padding-bottom: 14px;
+    text-transform: uppercase;
+}
+.arrowThumb {
+    width: 30px;
+    height: 30px;
+    vertical-align: -10px;
+}
+#details1 {
+    position: absolute;
+    bottom: 40px;
+    left: 102px;
+}
+#details2 {
+    position: absolute;
+    bottom: 40px;
+    left: 374px;
+}
+#details3 {
+    position: absolute;
+    bottom: 40px;
+    right: -78px;
+}
+#details1 img {
+    width: 250px;
+}
+#details2 img {
+    width: 250px;
+}
+#details3 img {
+    width: 250px;
+}
+
+
+/*middle footer*/
+#middleFooterWrap {
+    width: 100%;
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+}
+.middleFooter {
+    display:inline-block;
+    padding: 5px;
+    
+}
+.middleFooter img{
+    display: block;
+    width: 100%;
+    float: left;
+    width: 70px;
+    height: 70px; 
+    border-radius: 50%;
 }
