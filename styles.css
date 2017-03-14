@@ -36,7 +36,7 @@ section {
 .wrapDiv {
     /*display: block;*/
     width: 250px;
-    height: 50px;
+    height: 53px;
 }
 .titleNews {
     display: block;
@@ -47,14 +47,14 @@ section {
 }
 .titleNews a {
     display: block;
-    padding-bottom: 5px;
+    padding: 8px 0;
 }
-.titleNews10 {
+/*.titleNews10 {
     position: absolute;
     top: 190px;
     left: 109.6px;
     background-color: rosybrown;
-}
+}*/
 .news .dottedBorder {
     display: inline-block;
     width: 308px;
@@ -74,6 +74,21 @@ section {
     width: 17.05em;
     height: 11.8em;
     padding: 0px 5px 0px 5px;
+    transition: all .2s ease-in-out;
+    /*transition: all .5s ease;*/
+}
+.newsEffects img {
+    width: 100%;
+    height: 100%;
+}
+.newsEffects:hover  {
+    transform: scale(1.1); 
+}
+/*.newsEffects {
+    display: inlin-block;
+    width: 17.05em;
+    height: 11.8em;
+    padding: 0px 5px 0px 5px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -82,8 +97,8 @@ section {
 
 .newsEffects:hover  {
     background-size: 130% 130%;
-}
-.pic1 {
+}*/
+/*.pic1 {
     background-image: url("images/img1.jpg");
 }
 .pic2 {
@@ -112,13 +127,18 @@ section {
 }
 .pic10 {
     background-image: url("images/img10.jpg");
-}
+}*/
 
 /*aside*/
-aside {
+#banner {
+    display: block;
+    float: right;
+    width: 25%;
+}
+/*aside {
     width: 25%;
     float: right;
-}
+}*/
 .wrap-aside {
    width: 100%;
    /*border: 2px solid black;*/
