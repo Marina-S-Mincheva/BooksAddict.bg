@@ -65,7 +65,7 @@ for (var index = 0; index < books.length; index++) {
     div.setAttribute("class", "news");
     var firstDivChild = div.childNodes[1];   // main Div first child
     firstDivChild.setAttribute("class", "dot");
-    firstDivChild.setAttribute("href", "#");
+    firstDivChild.setAttribute("href", "#divAbsolute");
     var firstAChild = firstDivChild.childNodes[1]; //span
     firstAChild.setAttribute("class", "dottedBorder");
     var lastAChild = firstAChild.childNodes[1];
@@ -76,18 +76,19 @@ for (var index = 0; index < books.length; index++) {
     lastDivChild.setAttribute("class", "titleNews");
     var child = lastDivChild.childNodes[1];
     child.setAttribute("class", "wrapDiv");
-    var firstChildChild = child.childNodes[1];
-    firstChildChild.setAttribute("href", "#");
+    // var firstChildChild = child.childNodes[1];
+    // firstChildChild.setAttribute("href", "#divAbsolute");
     var lastChildChild = child.childNodes[3];
     lastChildChild.setAttribute("class", "subTitleNews");
 
 
     if (obj.pic) {
         lastAChild.childNodes[1].setAttribute("src", obj.pic);
+        lastAChild.childNodes[1].setAttribute("class", "picAbsolute");
     }
 
     if (obj.title) {
-        document.querySelector(".wrapDiv > a > span").textContent = obj.title;
+        document.querySelector(".wrapDiv > span").textContent = obj.title;
         // console.log(obj.title);
     }
     if (obj.author) {
@@ -101,5 +102,43 @@ for (var index = 0; index < books.length; index++) {
     if (parent.childNodes[12]) {
         parent.removeChild(parent.childNodes[12]);
     }
-
 };
+
+
+
+
+
+//DIV ABSOLUTE
+var a = document.querySelectorAll(".picAbsolute");
+
+for (var i = 0; i < a.length; i++) {
+    var t = a[i];
+    t.addEventListener("click", function (event) {
+        document.getElementById("divAbsolute").style.display = "block";
+        event.stopImmediatePropagation();
+    }, false);
+    t.addEventListener("click", function (event) {
+        document.querySelector("#divAbsolute > img").src = t.src;
+        // console.log(document.querySelector("#divAbsolute > img").src);
+    }, false);
+    console.log(t);
+    console.log(t.getAttribute("src"));
+    console.log(t.src);
+};
+
+
+var button = document.querySelector("#divAbsolute > button");
+button.addEventListener("click", function (event) {
+    document.getElementById("divAbsolute").style.display = "none";
+    event.preventDefault();
+}, false);
+
+
+// Array.prototype.forEach.call(document.querySelectorAll(".picAbsolute"), function (element) {
+//     element.addEventListener("click", function () {
+//         document.querySelector("#divAbsolute > img").src = element.src;
+//     }, false);
+//     console.log(element);
+//     console.log(element.src);
+// });
+

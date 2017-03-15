@@ -11,6 +11,28 @@ body {
 /*#main {
     padding: 5px;
 }*/
+
+
+
+/*divAbsolute*/
+#divAbsolute {
+    width: 70%;
+    height: 90%;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    background-color: yellow;
+    display: none;
+}
+#divAbsolute button {
+    position: relative;
+    top: 550px;
+    left: 700px;
+}
+#divAbsolute img{
+    width: 200px;
+    height: 200px;
+}
 section {  
     width: 70%;
     float: left; 
@@ -30,6 +52,7 @@ section {
     opacity: 0.8;
     /*filter: alpha(opacity=50); */
 }
+
 #wrapper {
     width: 100%;
     display: inline-block;
@@ -58,6 +81,8 @@ section {
 .wrapDiv span {
     color: sandybrown;
     font-size: 1.1em;
+    display: block;
+    padding-top: 8px;
 }
 .titleNews {
     display: block;
@@ -69,10 +94,6 @@ section {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-.titleNews a {
-    display: block;
-    padding: 8px 0;
 }
 
 .news .dottedBorder {
