@@ -55,7 +55,7 @@ var books = [
 
 for (var index = 0; index < books.length; index++) {
     var obj = books[index];
-
+    // console.log(books[index]);
     var parent = document.querySelector("#wrapper");
     var newDiv = document.createElement("div");
     newDiv.setAttribute("id", "firstMainDiv");
@@ -88,13 +88,18 @@ for (var index = 0; index < books.length; index++) {
 
     if (obj.title) {
         document.querySelector(".wrapDiv > a > span").textContent = obj.title;
-        console.log(obj.title);
+        // console.log(obj.title);
     }
     if (obj.author) {
         document.querySelector(".subTitleNews > span").textContent = obj.author;
-        console.log(obj.author);
+        // console.log(obj.author);
     }
 
     newDiv.innerHTML = div.innerHTML;
     parent.appendChild(newDiv);
+
+    if (parent.childNodes[12]) {
+        parent.removeChild(parent.childNodes[12]);
+    }
+
 };

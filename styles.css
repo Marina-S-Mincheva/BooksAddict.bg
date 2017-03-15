@@ -1,7 +1,11 @@
 body {
     width: 1170px;
     margin: 0 auto;
-    background-color: navajowhite;
+    background: url("images/background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 } 
 
 /*#main {
@@ -11,12 +15,23 @@ section {
     width: 70%;
     float: left; 
     font-size: 1.1em;
+    background: url("images/section6.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-
+.backTitles {
+    background: url("images/background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.8;
+    /*filter: alpha(opacity=50); */
+}
 #wrapper {
     width: 100%;
-    /*border: 2px solid black;*/
-    background-color: rosybrown;
     display: inline-block;
     padding: 20px 0px;
 }
@@ -29,43 +44,43 @@ section {
    text-align: center;
 }
 .dot {
-   width: 308px;
-   border-bottom: 1px dotted black;
+   width: 300px;
+   border-bottom: 1px dotted burlywood;
    padding-bottom: 18px;
 }
 .wrapDiv {
     /*display: block;*/
     width: 250px;
     height: 53px;
+    padding-bottom: 5px;
+    padding-right: 11px;
+}
+.wrapDiv span {
+    color: sandybrown;
+    font-size: 1.1em;
 }
 .titleNews {
     display: block;
     position: absolute;
     top: 190px;
     left: 110.8px;
-    background-color: rosybrown;
+    background: url("images/section6.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .titleNews a {
     display: block;
     padding: 8px 0;
 }
-/*.titleNews10 {
-    position: absolute;
-    top: 190px;
-    left: 109.6px;
-    background-color: rosybrown;
-}*/
+
 .news .dottedBorder {
     display: inline-block;
-    width: 308px;
-    border-bottom: 1px dotted black;
+    /*width: 200px;*/
+    border-bottom: 1px dotted burlywood;
     padding: 15px 0;
 }
-
-
-
-
-
 
 
 /*hover effects over news images*/
@@ -75,7 +90,6 @@ section {
     height: 11.8em;
     padding: 0px 5px 0px 5px;
     transition: all .2s ease-in-out;
-    /*transition: all .5s ease;*/
 }
 .newsEffects img {
     width: 100%;
@@ -84,50 +98,6 @@ section {
 .newsEffects:hover  {
     transform: scale(1.1); 
 }
-/*.newsEffects {
-    display: inlin-block;
-    width: 17.05em;
-    height: 11.8em;
-    padding: 0px 5px 0px 5px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    transition: all .5s ease;
-}
-
-.newsEffects:hover  {
-    background-size: 130% 130%;
-}*/
-/*.pic1 {
-    background-image: url("images/img1.jpg");
-}
-.pic2 {
-    background-image: url("images/img2.jpg");
-}
-.pic3 {
-    background-image: url("images/img3.jpg");
-}
-.pic4 {
-    background-image: url("images/img4.jpg");
-}
-.pic5 {
-    background-image: url("images/img5.jpg");
-}
-.pic6 {
-    background-image: url("images/img6.jpg");
-}
-.pic7 {
-    background-image: url("images/img7.jpg");
-}
-.pic8 {
-    background-image: url("images/img8.jpg");
-}
-.pic9 {
-    background-image: url("images/img9.jpg");
-}
-.pic10 {
-    background-image: url("images/img10.jpg");
-}*/
 
 /*aside*/
 #banner {
@@ -135,13 +105,9 @@ section {
     float: right;
     width: 25%;
 }
-/*aside {
-    width: 25%;
-    float: right;
-}*/
+
 .wrap-aside {
    width: 100%;
-   /*border: 2px solid black;*/
    background-color: palegreen;
    margin: 0 auto;
    padding: 10px;
@@ -179,10 +145,7 @@ section {
      .titleNews, .titleNews10  {
          display: none;
      }
-     
-
 }
-
 
 
 
@@ -190,26 +153,37 @@ section {
 #redaction {
     width: 70%;
     background-color: tan;
-    margin: 20px 0px;
+    /*padding-top: 20px;*/
+    background: url("images/section4.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 #arrow {
     padding: 10px;
-    text-transform: uppercase;
+    /*font-weight: bold;*/
+    /*text-transform: uppercase;*/
 }
 .roundedPic {
     display: block;
     float: left;
     width: 25%;
     text-align: center;
+    padding-top: 10px;
+}
+.roundedPic span {
+    color: #330000;
 }
 #redaction .effects {
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    border: 6px solid red;
+    border: 2px solid red;
 }
 #arrow {
     display: inline-block;
+    font-size: 2em;
 }
 #arrow img {
     width: 30px;
@@ -253,12 +227,17 @@ section {
 
 /*third part images with JS - FREE TIME*/
 #cookingBooks {
-    background-color: mediumaquamarine;
+    background: url("images/section1.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 #wrapImgJS {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
+    padding: 15px 0;
 }
 .pics {
     display: block;
@@ -319,7 +298,7 @@ section {
 
 /*VIDOS*/
 #videos {
-    padding-top: 10px;
+    /*padding-top: 10px;*/
     width: 100%;
 }
 .videosChild {
@@ -327,12 +306,13 @@ section {
     float: left;
     width: 50%;
     text-align: center;
+    padding: 20px 0;
 }
 
 /*slideShow*/
 #childrenBook {
     background-color: sandybrown;
-    margin-top: 20px;
+    /*padding-top: 20px;*/
 }
 #slideShow {
     display: inline-block;
@@ -371,12 +351,24 @@ section {
 
 /*Popular books of the week*/
 #mostPopularChildrensBooks {
-    font-size: 1.5em;
-    padding: 10px 0;
+    font-size: 2.0em;
+    margin-top: 20px;
+    padding: 15px 0;
+    background: url("images/background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.8;
 }
 #weekBooks {
     width: 100%;
     box-sizing: border-box;
+    background: url("images/section2.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .popularWeekBook .centerA {
@@ -387,6 +379,7 @@ section {
     box-sizing: border-box;
 }
 .centerA img {
+    padding-top: 15px;
     width: 145.75px;
     height: 220px;
     text-align: center; 
@@ -398,8 +391,10 @@ section {
     box-sizing: border-box;
 }
 .makeItalic {
+    display: inline-block;
     font-style: italic;
     color: firebrick;
+    padding-bottom: 15px;
 }
 
 
@@ -408,12 +403,17 @@ section {
 /*#thumb {
     display: inline-block;
 }*/
+footer {
+    display: inline-block;
+    width: 70%;
+    /*border: 1px solid green;*/
+}
 #footer1 {
     width: 100%;
     /*position: relative;*/
     display: inline-block;
     /*margin-bottom: 100px;*/
-    border: 1px solid black;
+
 }
 .footer1Div {
     display: block;
@@ -427,6 +427,12 @@ section {
 /*thumbnail*/
 #thumb {
     position: relative;
+    width: 100%;
+    background: url("images/section1.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .thumbnail1, .thumbnail2, .thumbnail3 {
@@ -444,7 +450,7 @@ section {
 .titleThumb {
     display: block;
     padding-bottom: 14px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 .arrowThumb {
     width: 30px;
@@ -478,10 +484,18 @@ section {
 
 
 /*middle footer*/
-#middleFooterWrap {
+#middleSection {
     width: 100%;
+    padding: 20px 0;
+    background: url("images/section1.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#middleFooterWrap {
     display: block;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     text-align: center;
 }
 .middleFooter {
@@ -496,4 +510,50 @@ section {
     width: 70px;
     height: 70px; 
     border-radius: 50%;
+}
+
+
+
+
+/*LASTFOOTER*/
+#lastFooter {
+    width: 100%;
+    padding: 20px 0;
+    background: url("images/section6.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#lastDivFooter {
+    width: 80%;
+}
+#lastFooterWrap, #verticalLine {
+    display: block;
+    float: right;
+    width: 80%;
+    padding-bottom: 5px;
+}
+#lastFooterWrap span, a{
+    padding: 0 5px;
+}
+
+#verticalLine a{
+    border-left: thick solid #ff0000;
+    border-width: 2px;
+    height: 5px;
+}
+#verticalLine a:first-child {
+    border-left: none;
+}
+/*logo*/
+#logoPNG {
+    width: 10%;
+    padding-left: 35px;
+}
+#logoPNG img {
+   display: block;
+   float: left;
+   width: 70px;
+   height: 70px;
 }
