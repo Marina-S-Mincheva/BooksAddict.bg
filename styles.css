@@ -26,8 +26,8 @@ body {
 }
 #divAbsolute button {
     position: relative;
-    top: 550px;
-    left: 700px;
+    top: 380px;
+    left: 600px;
 }
 #divAbsolute img{
     width: 200px;

@@ -109,7 +109,7 @@ for (var index = 0; index < books.length; index++) {
 
 
 //DIV ABSOLUTE
-var a = document.querySelectorAll(".picAbsolute");
+var a = document.querySelectorAll(".pic1 > img.picAbsolute");
 
 for (var i = 0; i < a.length; i++) {
     var t = a[i];
@@ -117,14 +117,22 @@ for (var i = 0; i < a.length; i++) {
         document.getElementById("divAbsolute").style.display = "block";
         event.stopImmediatePropagation();
     }, false);
-    t.addEventListener("click", function (event) {
-        document.querySelector("#divAbsolute > img").src = t.src;
-        // console.log(document.querySelector("#divAbsolute > img").src);
-    }, false);
-    console.log(t);
-    console.log(t.getAttribute("src"));
-    console.log(t.src);
+    // t.addEventListener("click", function () {
+    //     document.querySelector("#divAbsolute > img").src = t.src;
+    // }, false);
+    // console.log(t.src);
+    // console.log(document.querySelector("#divAbsolute > img").src);
 };
+
+
+// for (var i = 0; i < a.length; i++) {
+//     var t = a[i];
+//     t.addEventListener("click", function (event) {
+//         document.querySelector("#divAbsolute > img").src = t.src;
+//     }, false);
+//     console.log(t.src);
+//     console.log(document.querySelector("#divAbsolute > img").src);
+// };
 
 
 var button = document.querySelector("#divAbsolute > button");
@@ -132,13 +140,15 @@ button.addEventListener("click", function (event) {
     document.getElementById("divAbsolute").style.display = "none";
     event.preventDefault();
 }, false);
-
-
-// Array.prototype.forEach.call(document.querySelectorAll(".picAbsolute"), function (element) {
-//     element.addEventListener("click", function () {
-//         document.querySelector("#divAbsolute > img").src = element.src;
-//     }, false);
-//     console.log(element);
-//     console.log(element.src);
-// });
+var i = document.getElementById("image");
+Array.prototype.forEach.call(document.querySelectorAll(".pic1 > img.picAbsolute"), function (element) {
+    element.addEventListener("click", function () {
+        alert("clickkk");
+        document.getElementById("divAbsolute").replaceChild(i,element);
+    }, false);
+    console.log(element);
+    // console.log(element.src);
+     console.log(document.getElementById("image"));
+     console.log(document.getElementById("divAbsolute").replaceChild(i,element));
+});
 
