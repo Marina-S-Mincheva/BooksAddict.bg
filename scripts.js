@@ -9,12 +9,14 @@
         }
         toMove = document.getElementById("scroller");
         toMove2 = document.getElementById("scroller2");
-        // toMove3 = document.getElementById("scroller3");
-        // toMove4 = document.getElementById("scroller4");
-        toMove.style.backgroundPosition = "0 " + cssYPos + "px";
-        toMove2.style.backgroundPosition = "0 " + cssYPos + "px";
-        // toMove3.style.backgroundPosition = "0 " + cssYPos + "px";
-        // toMove4.style.backgroundPosition = "0 " + cssYPos + "px";
+        toMove5 = document.getElementById("scroller5");
+        toMove6 = document.getElementById("scroller6");
+        toMove7 = document.getElementById("scroller7");
+        toMove.style.backgroundPosition = "0" + cssYPos + "px";
+        toMove2.style.backgroundPosition = "0" + cssYPos + "px";
+        toMove5.style.backgroundPosition = "0 " + cssYPos + "px";
+        toMove6.style.backgroundPosition = "0 " + cssYPos + "px";
+        toMove7.style.backgroundPosition = "0 " + cssYPos + "px";
     }
     function StartMove() {
         var BGImage = new Image();
@@ -36,11 +38,10 @@ function plusDivs(n) {
     showDivs(slideIndex += n);
 }
 function showDivs(n) {
-    var i;
     var x = document.getElementsByClassName("mySlides");
     if (n > x.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = x.length }
-    for (i = 0; i < x.length; i++) {
+    for (var i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
     x[slideIndex - 1].style.display = "block";
@@ -90,27 +91,7 @@ Array.prototype.forEach.call(images, function (element) {
 
 
 
-//ABSOLUTE DIV
+// //ROTATE BANNERS
 
-// Array.prototype.forEach.call(document.querySelectorAll(".picAbsolute"), function (element) {
-//     element.addEventListener('click', function () {
-//         // document.querySelector('#divAbsolute > img').src = element.src;
-//         console.log("click");
-//         document.getElementById('divAbsolute').style.display = "block";
-//     }, false);
 
-// });
 
-// var a = document.querySelectorAll(".pic1");
-// (function () {
-// var a = document.querySelectorAll(".dottedBorder");
-// console.log("a", a);
-// for (var i = 0; i < a.length; i++) {
-//     var t = a[i];
-//     console.log(a[i]);
-//     t.addEventListener("click", function () {
-//         alert("click");
-//         document.getElementById("divAbsolute").style.display = "block";
-//     }, false);
-// };
-// } ());
