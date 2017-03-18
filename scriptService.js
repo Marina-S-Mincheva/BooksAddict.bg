@@ -1,51 +1,51 @@
 var books = [
     img1 = {
-        title: "A piece of the world",
+        title: "'A piece of the world'",
         author: "by Christina Baker Kline",
         pic: "images/img1.jpg"
     },
     img2 = {
-        title: "10 Things I Can See...",
+        title: "'10 Things I Can See...'",
         author: "by Carrie Mac",
         pic: "images/img2.jpg"
     },
     img3 = {
-        title: "Piecing Me Together",
+        title: "'Piecing Me Together'",
         author: "by Renée Watson",
         pic: "images/img3.jpg"
     },
     img4 = {
-        title: "Birds Art Life",
+        title: "'Birds Art Life'",
         author: "by Kyo Maclear",
         pic: "images/img4.jpg"
     },
     img5 = {
-        title: "Mouse and Hippo",
+        title: "'Mouse and Hippo'",
         author: "by Mike Twohy",
         pic: "images/img5.jpg"
     },
     img6 = {
-        title: "The Animators",
+        title: "'The Animators'",
         author: "by Kayla Rae Whitaker",
         pic: "images/img6.jpg"
     },
     img7 = {
-        title: "Arthur and Sherlock",
+        title: "'Arthur and Sherlock'",
         author: "by Michael Sims",
         pic: "images/img7.jpg"
     },
     img8 = {
-        title: "Short",
+        title: "'Short'",
         author: "by Holly Goldberg Sloan",
         pic: "images/img8.jpg"
     },
     img9 = {
-        title: "Stef Soto, Taco Queen",
+        title: "'Stef Soto, Taco Queen'",
         author: "by Jennifer Torres",
         pic: "images/img9.jpg"
     },
     img10 = {
-        title: "Giant Days Vol. 4",
+        title: "'Giant Days Vol. 4'",
         author: "by John Allison",
         pic: "images/img10.jpg"
     }
@@ -110,7 +110,7 @@ for (var index = 0; index < books.length; index++) {
 
 var myText = [
     text1 = {
-        text: "Giant Days Vol.4 " +
+        text: "'Giant Days Vol.4' " +
               "is a springtime story at Sheffield University. Will Susan, Esther, and Daisy make it to summer? "+
               "It is springtime at Sheffield University—the flowers are blooming, the birds are singing, and "+
               "fast-pals Susan, Esther and Daisy continue to survive their freshman year of college. Susan "+
@@ -122,7 +122,7 @@ var myText = [
               "issues 13-16."
     },
     text2 = {
-        text: "A piece of the world \
+        text: "'A piece of the world' \
               is written from the #1 New York Times bestselling author of the smash bestseller Orphan Train, a stunning \
               and atmospheric novel of friendship, passion, and art, inspired by Andrew Wyeth’s mysterious and iconic \
               painting Christina’s World. \
@@ -140,7 +140,7 @@ var myText = [
               and how artist and muse can come together to forge a new and timeless legacy."
     },
     text3 = {
-        text: "10 Things I Can See from Here \
+        text: "'10 Things I Can See from Here' \
               is perfect for fans of Finding Audrey and Everything, Everything, this is the poignant and uplifting story of Maeve,\
               who is dealing with anxiety while falling in love with a girl who is not afraid of anything.\
                   Think positive. \
@@ -156,7 +156,7 @@ var myText = [
               could have foreseen. Will she be able to navigate through all the chaos to be there for the people she loves?"
     },
     text4 = {
-        text: "Piecing Me Together \
+        text: "'Piecing Me Together' \
              is a timely and powerful story about a teen girl from a poor neighborhood striving for success, from acclaimed author \
              Renée Watson. Jade believes she must get out of her neighborhood if she’s ever going to succeed. Her mother says she \
              has to take every opportunity. She has. She accepted a scholarship to a mostly-white private school and even Saturday \
@@ -167,7 +167,7 @@ var myText = [
              Friendships, race, privilege, identity—this compelling and thoughtful story explores the issues young women face."
     },
     text5 = {
-        text: "Birds Art Life \
+        text: "'Birds Art Life' \
              is a story where a writer’s search for inspiration, beauty, and solace leads her to birds in this intimate and exuberant meditation \
              on creativity and life—a field guide to things small and significant. When it comes to birds, Kyo Maclear isn’t seeking \
              the exotic. Rather she discovers joy in the seasonal birds that find their way into view in city parks and harbors, \
@@ -182,7 +182,7 @@ var myText = [
              can lead us to discover our most satisfying and meaningful lives."
     },
     text6 = {
-        text: "Mouse and Hippo \
+        text: "'Mouse and Hippo' \
              is a perfect story for great friendships which come along when we least expect them, and this is especially true in Mouse and Hippo, New Yorker \
              cartoonist Mike Twohy’s hilarious tale of a chance encounter on a summer afternoon. Meticulous Mouse is focused on \
              getting the waves just right as he paints at the lake, easel atop a gray rock. But, oops! The rock is actually Hippo, \
@@ -198,7 +198,7 @@ var myText = [
              Twohy’s zany humor is a rare treat. His beguiling characters burst with so much personality that readers will long for a sequel.!"
     },
     text7 = {
-        text: "The Animators \
+        text: "'The Animators' \
             is a story where in the male-dominated field of animation, Mel Vaught and Sharon Kisses are a dynamic duo, the friction of their \
             differences driving them: Sharon, quietly ambitious but self-doubting; Mel, brash and unapologetic, always the life of \
             the party. Best friends and artistic partners since the first week of college, where they bonded over their working-class \
@@ -212,7 +212,7 @@ var myText = [
             friend, Teddy—reenters her life, and long-buried resentments rise to the surface, hastening a reckoning no one sees coming."
     },
     text8 = {
-        text: "Arthur and Sherlock is a great book. \
+        text: "'Arthur and Sherlock' is a great book. \
             As a young medical student, Arthur Conan Doyle studied in Edinburgh under the vigilant eye of a diagnostic genius, \
             Dr. Joseph Bell.Doyle often observed Bell identifying a patient's occupation, hometown, and ailments from the smallest details \
             of dress, gait, and speech. \Although Doyle was training to be a surgeon, he was meanwhile cultivating essential knowledge \
@@ -226,7 +226,7 @@ var myText = [
             tradition of Doyle's esteemed teacher."
     },
     text9 = {
-        text: "Short tell us: \
+        text: "'Short' tell us: \
             Here is what most people today don’t know about me: I was very short as a kid. How short? I was the smallest girl in my \
             class every year until seventh grade. I was positioned up front in all of the school photos. I bought my clothing in the \
             little kids’ department and didn’t advance like my friends to the pre-teen section of the store. \
@@ -244,7 +244,7 @@ var myText = [
             I did."
     },
     text10 = {
-        text: "Stef Soto, Taco Queen \
+        text: "'Stef Soto, Taco Queen' \
             is written by Jennifer Torres, her latest book, “Stef Soto, Taco Queen,” came from a lifetime of experiences. \
             “A lot of inspiration came from my own upbringing. I come from a Mexican-American family,” she said. \
             In Torres’ novel, Stef Soto wants to ride the city bus like her former friend Julia, or even just the school bus. \
@@ -276,6 +276,7 @@ for (var i = 0; i < a.length; i++) {
             document.getElementById("divAbsolute").style.display = "block";
 
             document.querySelector("#divAbsolute > img").src = t.src;
+            console.log(t.src);
             var b = t.src.replace(/[^0-9]+/g, "");
 
             for (var j = 0; j < myText.length; j++) {

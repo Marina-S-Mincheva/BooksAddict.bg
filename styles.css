@@ -8,7 +8,9 @@ body {
     background-size: cover;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 } 
-
+ * img {
+     border-radius: 8px;
+ }
 /*#main {
     padding: 5px;
 }*/
@@ -38,7 +40,6 @@ body {
 }
 #divAbsolute #image{
     display: inline-block;
-    /*float: left;*/
     margin-left: 10px;
     margin-top: 10px;
     width: 280px;
@@ -47,41 +48,10 @@ body {
 }
 #newP {
     display: inline-block;
-    /*float: left;*/
     padding: 20px 20px;;
-
     font-size: 1.1em;
-    /*line-height: em;*/
 }
-/*#scroller5 {
-    position: absolute;
-    top: 20px;
-    left: 375px;
-    width: 11em;
-    height: 13em;
-    background-image:url("images/jsImg1.jpg");
-    background-size: 400px; 
-    margin-left: 10px;
-}
-#scroller6 {
-    position: absolute;
-    top: 20px;
-    left: 561px;
-    width: 11em;
-    height: 13em;
-    background-image:url("images/jsImg2.jpg"); 
-    background-size: 300px; 
-}
-#scroller7 {
-    position: absolute;
-    top: 21px;
-    left: 713px;
-    width: 11em;
-    height: 13em;
-    background-image:url("images/jsImg3.jpg"); 
-    background-size: 212px; 
-    margin-left: 24px;
-}*/
+
 
 #scroller5 {
     position: absolute;
@@ -137,6 +107,10 @@ body {
    -ms-animation:100s scroll infinite linear;
     animation:200s scroll infinite linear;
 }
+
+
+
+
 section {  
     width: 70%;
     float: left; 
@@ -351,6 +325,9 @@ section {
 .roundedPic span {
     color: #330000;
 }
+.roundedPic span:hover {
+    color: darkred;
+} 
 #redaction .effects {
     width: 160px;
     height: 160px;
@@ -376,10 +353,9 @@ section {
     width: 800px;
     height: 370px;
     position: relative;
-    top: 0;
+    top: 10px;
     left: 205px;
     background: url("images/backAbsolute.jpg") no-repeat center center fixed; 
-    /*opacity: 0.6;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -393,10 +369,9 @@ section {
     width: 800px;
     height: 370px;
     position: relative;
-    top: 0;
+    top: 10px;
     left: 407px;
     background: url("images/backAbsolute.jpg") no-repeat center center fixed; 
-    /*opacity: 0.6;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -407,13 +382,12 @@ section {
     line-height: 1.2em;
 }
 #contHoverDiv3 {
-    width: 600px;
+    width: 650px;
     height: 370px;
     position: relative;
-    top: 0;
+    top: 10px;
     left: 608px;
     background: url("images/backAbsolute.jpg") no-repeat center center fixed; 
-    /*opacity: 0.6;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -425,12 +399,11 @@ section {
 }
 #contHoverDiv4 {
     width: 700px;
-    height: 480px;
+    height: 370px;
     position: relative;
-    top: 0;
+    top: 10px;
     right: 80px;
     background: url("images/backAbsolute.jpg") no-repeat center center fixed; 
-    /*opacity: 0.6;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -558,11 +531,10 @@ section {
     display: block;
     float: left;
     width: 35%;
-  
 }
 #cook {
-    font-size: 2em;
-    padding: 10px;
+    font-size: 2.2em;
+    padding: 15px;
 }
 #scroller {
     width: 15em;
@@ -580,7 +552,7 @@ section {
 #scroller3 {
     width: 12em;
     height: 8.72em;
-    background-image:url("images/jsImg3.jpg"); 
+    background-image:url("images/newPic.jpg"); 
     background-size: 212px; 
     margin-left: 24px;
    
@@ -595,10 +567,17 @@ section {
 }
 .text {
     display: block;
+    /*padding-top: 50px;*/
     width: 90%;
+    /*height: 50%;*/
     text-align: center;
-    color: white;
-    text-shadow: 2px 2px 8px #000000;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px  darkslategrey;
+}
+.text:hover {
+    color: darkslategrey;
+    text-shadow: 1px 1px  black;
 }
 
 #asideDiv {
@@ -608,6 +587,7 @@ section {
     width: 13.5em;
     height: 18em;
 }
+
 
 
 
@@ -621,7 +601,13 @@ section {
     float: left;
     width: 50%;
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
+    /*border-bottom: 3px double grey;*/
+    box-sizing: border-box;
+}
+.videosChild iframe {
+    border: 3px double grey;
+    padding: 2px;
 }
 
 /*slideShow*/
@@ -641,8 +627,14 @@ section {
     text-align: center; 
 }
 .mySlides p {
+    display: inline-block;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    color: white;
+    text-shadow: 0.5px 0.5px blueviolet;
+}
+.mySlides p:hover {
+    color: #ff01f2;
 }
 #btns {
     position: relative;
@@ -650,17 +642,17 @@ section {
 }
 #button-left {
     position: absolute;
-    bottom: 140px;
+    bottom: 170px;
     left: 0px;
 }
 #button-right {
     position: absolute;
-    bottom: 140px;
+    bottom: 170px;
     right: 0px;
 }
 #childrensTime {
     font-size: 2em;
-    padding-bottom: 10px;
+    padding: 15px;
 }
 
 
@@ -699,17 +691,73 @@ section {
     height: 220px;
     text-align: center; 
 }
-.centerA a {
+.centerA p {
     display: block;
     text-align: center;
-    padding: 2px;
+    padding: 5px;
     box-sizing: border-box;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px white;
+}
+.centerA p:hover {
+    cursor: pointer;
+    color: orangered;
 }
 .makeItalic {
     display: inline-block;
     font-style: italic;
-    color: firebrick;
+    color: darkred;
     padding-bottom: 15px;
+    text-shadow: 1px 1px black;
+}
+/*.popularWeekBook {
+    display: inline-block;
+}*/
+
+/*DIVABSOLUTE2*/
+/*#needed {
+    position: absolute;
+}*/
+#divAbsolute2 {
+    width: 900px;;
+    height: 550px;
+    position: absolute;
+    top: 3000px;
+    left: 150px;
+    background: url("images/backAbsolute.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    box-sizing: border-box;
+    border: 6px double black;
+    z-index: 102;
+}
+#btn2 {
+    position: absolute;
+    top: 500px;
+    right: 65px;
+}
+#image2{
+    display: block;
+    float: left;
+    margin: 10px 15px 5px 10px;
+    width: 280px;
+    height: 300px;
+    box-shadow: 5px 5px 5px #222;
+}
+#newP1 {
+    display: block;
+    /*float: left;*/
+    padding: 20px 0;
+    text-align: center;
+}
+#newP2 {
+    display: block;
+    text-align: left;
+    /*margin-left: 155px;*/
+    /*padding: 0px 40px;*/
 }
 
 
@@ -759,12 +807,15 @@ footer {
     bottom: 50px;
     right: 10px;*/
 }
-/*.textThumb {
-    padding-left: 5px;
-}*/
+.textThumb {
+    color: palegoldenrod;
+    /*text-shadow:*/
+    /*padding-left: 5px;*/
+}
 .titleThumb {
     display: block;
     padding-bottom: 14px;
+    color: palegoldenrod;
     /*text-transform: uppercase;*/
 }
 .arrowThumb {
@@ -855,9 +906,17 @@ footer {
 }
 
 #verticalLine a{
-    border-left: thick solid #ff0000;
+    border-left: thick solid firebrick;
     border-width: 2px;
+    color: white;
     height: 5px;
+    text-shadow: 1px 1px black;
+    font-size: 0.8em;
+}
+#logoName a {
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 0.8em;
 }
 #verticalLine a:first-child {
     border-left: none;
