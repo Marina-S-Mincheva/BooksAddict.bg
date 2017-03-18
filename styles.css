@@ -33,8 +33,8 @@ body {
 }
 #btn {
     position: absolute;
-    top: 540px;
-    right: 70px;
+    top: 600px;
+    right: 65px;
 }
 #divAbsolute #image{
     display: inline-block;
@@ -46,15 +46,14 @@ body {
     box-shadow: 5px 5px 5px #222;
 }
 #newP {
-    display: inline;
+    display: inline-block;
     /*float: left;*/
-    padding: 20px;
+    padding: 20px 20px;;
 
     font-size: 1.1em;
     /*line-height: em;*/
 }
-#scroller5 {
-    /*display: inline-block;*/
+/*#scroller5 {
     position: absolute;
     top: 20px;
     left: 375px;
@@ -66,7 +65,6 @@ body {
 }
 #scroller6 {
     position: absolute;
-    /*display: inline-block;*/
     top: 20px;
     left: 561px;
     width: 11em;
@@ -76,7 +74,6 @@ body {
 }
 #scroller7 {
     position: absolute;
-    /*display: inline-block;*/
     top: 21px;
     left: 713px;
     width: 11em;
@@ -84,15 +81,62 @@ body {
     background-image:url("images/jsImg3.jpg"); 
     background-size: 212px; 
     margin-left: 24px;
-   
-}
-
-
-/*.container .slides {*/
-    /*display: block;*/
-    /*width: 80px;
-    height: 100px;
 }*/
+
+#scroller5 {
+    position: absolute;
+    top: 60px;
+    left: 370px;
+    width: 11em;
+    min-height: 13em;
+    margin-left: 10px;
+    background:url("images/jsImg1.jpg") fixed;
+   -webkit-background-size: 260px;
+   -moz-background-size: 260px;
+   -o-background-size: 260px;
+    background-size: 260px;
+    -webkit-animation:100s scroll infinite linear;
+    -moz-animation:100s scroll infinite linear;
+    -o-animation:100s scroll infinite linear;
+    -ms-animation:100s scroll infinite linear;
+    animation:200s scroll infinite linear;
+}
+#scroller6 {
+    position: absolute;
+    top: 60px;
+    left: 552px;
+    width: 11em;
+    min-height: 13em;
+    margin-left: 10px;
+    background:url("images/jsImg2.jpg") fixed;
+   -webkit-background-size: 230px;
+   -moz-background-size: 230px;
+   -o-background-size: 230px;
+    background-size: 230px;
+    -webkit-animation:100s scroll infinite linear;
+    -moz-animation:100s scroll infinite linear;
+    -o-animation:100s scroll infinite linear;
+    -ms-animation:100s scroll infinite linear;
+    animation:200s scroll infinite linear;
+}
+#scroller7 {
+    position: absolute;
+    top: 61px;
+    left: 720px;
+    width: 11em;
+    min-height: 13em;
+    background:url("images/jsImg3.jpg") fixed;
+   -webkit-background-size: 220px;
+   -moz-background-size: 220px;
+   -o-background-size: 220px;
+    background-size: 220px; 
+    margin-left: 24px;
+   -webkit-animation:100s scroll infinite linear;
+   -moz-animation:100s scroll infinite linear;
+   -o-animation:100s scroll infinite linear;
+   -ms-animation:100s scroll infinite linear;
+    animation:200s scroll infinite linear;
+}
 section {  
     width: 70%;
     float: left; 
@@ -110,7 +154,6 @@ section {
     -o-background-size: cover;
     background-size: cover;
     opacity: 0.8;
-    /*filter: alpha(opacity=50); */
 }
 
 #wrapper {
@@ -197,47 +240,25 @@ section {
    text-align: center;
 }*/
 #banner2{
+   display: block;
    width: 100%;
-   margin: 0 auto;
-   /*position:fixed;*/
-      background-color: palegreen;
-   /*background:url("images/advert2017.jpg") no-repeat center center fixed;*/
-    /*-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  -webkit-animation:100s scroll infinite linear;
-  -moz-animation:100s scroll infinite linear;
-  -o-animation:100s scroll infinite linear;
-  -ms-animation:100s scroll infinite linear;
-  animation:100s scroll infinite linear;*/
-  /*top:0;
-  left:0;*/
-  /*width:100%;
- height:100%;*/
+   height: 3887px;
+   background:url("images/advert2017.png") fixed;
+   -webkit-background-size: 320px;
+   -moz-background-size: 320px;
+   -o-background-size: 320px;
+   background-size: 319px;
+   -webkit-animation:100s scroll infinite linear;
+   -moz-animation:100s scroll infinite linear;
+   -o-animation:100s scroll infinite linear;
+   -ms-animation:100s scroll infinite linear;
+   animation:100s scroll infinite linear;
+   top:0;
+   left:0;
 }
 
-/*h1{
-  text-align:center;
-  color:#FFF !important;
-  margin-top:10%;
-  font:60px Lobster;
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
-}
 
-p{
-  color:#FFF;
-  text-align:center;
-  font:15px Lobster;
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
-}*/
-
-
-/*@-webkit-keyframes scroll{
+@-webkit-keyframes scroll{
   100%{
     background-position:0px -3000px;
   }
@@ -265,37 +286,8 @@ p{
   100%{
     background-position:0px -3000px;
   }
-}*/
-
-
-/*.btn-wrap{
-  margin:0 auto;
-  width:200px;
-  padding-top:50px;
 }
 
-a{
-  background:#e74c3c;
-  color:#FFF;
-  position:relative;
-  padding:15px;
-  font-weight:900 !important;
-  text-transform:uppercase;
-  border-radius:5px;
-  font:14px lato;
-  opacity:0.8;
-  letter-spacing:1px;
-  text-decoration:none;
-  box-shadow:#c0392b 0px 7px 2px,#000 0px 8px 5px;
-}
-
-a:hover{
-  opacitY:1;
-}
-a:active{
-  top:4px;
-  box-shadow:#c0392b 0px 3px 2px,#000 0px 3px 5px;
-}*/
 
 
 @media only screen and (max-width: 1024px) {
@@ -342,6 +334,7 @@ a:active{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding-bottom: 10px;
 }
 #arrow {
     padding: 10px;
@@ -376,6 +369,145 @@ a:active{
 #span2016 {
     display: block;
 }
+/*#divForAbsDiv {
+    position: absolute;
+}*/
+#contHoverDiv1 {
+    width: 800px;
+    height: 370px;
+    position: relative;
+    top: 0;
+    left: 205px;
+    background: url("images/backAbsolute.jpg") no-repeat center center fixed; 
+    /*opacity: 0.6;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    box-sizing: border-box;
+    border: 6px double black;
+    line-height: 1.2em;
+}
+#contHoverDiv2 {
+    width: 800px;
+    height: 370px;
+    position: relative;
+    top: 0;
+    left: 407px;
+    background: url("images/backAbsolute.jpg") no-repeat center center fixed; 
+    /*opacity: 0.6;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    box-sizing: border-box;
+    border: 6px double black;
+    line-height: 1.2em;
+}
+#contHoverDiv3 {
+    width: 600px;
+    height: 370px;
+    position: relative;
+    top: 0;
+    left: 608px;
+    background: url("images/backAbsolute.jpg") no-repeat center center fixed; 
+    /*opacity: 0.6;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    box-sizing: border-box;
+    border: 6px double black;
+    line-height: 1.2em;
+}
+#contHoverDiv4 {
+    width: 700px;
+    height: 480px;
+    position: relative;
+    top: 0;
+    right: 80px;
+    background: url("images/backAbsolute.jpg") no-repeat center center fixed; 
+    /*opacity: 0.6;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    box-sizing: border-box;
+    border: 6px double black;
+    line-height: 1.2em;
+}
+
+
+#contHoverDiv1 .p1 {
+    display: block;
+    position: absolute;
+    top: 10px;
+    font-size: 1.4em;
+    text-align: center;
+}
+#contHoverDiv1 .p2 {
+    display: block;
+    position: absolute;
+    top: 80px;
+    font-size: 0.9em;
+    text-align: left;
+    padding: 0px 10px 5px 10px;
+}
+
+#contHoverDiv2 .p1 {
+    display: block;
+    position: absolute;
+    top: 10px;
+    font-size: 1.4em;
+    text-align: center;
+}
+#contHoverDiv2 .p2 {
+    display: block;
+    position: absolute;
+    top: 60px;
+    font-size: 0.9em;
+    text-align: left;
+    padding: 0px 10px 5px 10px;
+}
+
+#contHoverDiv3 .p1 {
+    display: block;
+    position: absolute;
+    top: 10px;
+    font-size: 1.4em;
+    text-align: center;
+}
+#contHoverDiv3 .p2 {
+    display: block;
+    position: absolute;
+    top: 60px;
+    font-size: 0.9em;
+    text-align: left;
+    padding: 0px 10px 5px 10px;
+}
+
+#contHoverDiv4 .p1 {
+    display: block;
+    position: absolute;
+    top: 10px;
+    font-size: 1.4em;
+    text-align: center;
+}
+#contHoverDiv4 .p2 {
+    display: block;
+    position: absolute;
+    top: 60px;
+    font-size: 0.9em;
+    text-align: left;
+    padding: 0px 10px 5px 10px;
+}
+
+
+
 
 /*hover effects over rounded images*/
 .effects {
@@ -392,16 +524,16 @@ a:active{
 .effects:hover {
     background-size: 130% 130%;
 }
-.a {
+.roundedPic .a {
     background-image: url("images/images1.jpg");
 }
-.b {
+.roundedPic .b {
     background-image: url("images/images2.jpg");
 }
-.c {
+.roundedPic .c {
     background-image: url("images/images3.jpg");
 }
-.d {
+.roundedPic .d {
     background-image: url("images/images4.jpg");
 }
 
