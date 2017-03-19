@@ -110,16 +110,16 @@ for (var index = 0; index < books.length; index++) {
 
 var myText = [
     text1 = {
-        text: "'Giant Days Vol.4'\n\
-               is a springtime story at Sheffield University. Will Susan, Esther, and Daisy make it to summer? "+
-              "It is springtime at Sheffield University—the flowers are blooming, the birds are singing, and "+
-              "fast-pals Susan, Esther and Daisy continue to survive their freshman year of college. Susan "+
-              "is barely dealing with her recent breakup with McGraw, Esther is considering dropping out of "+
-              "school, and Daisy is trying to keep everyone and everyTHING from falling apart! Combined with "+
-              "house-hunting, indie film festivals, and online dating, can the girls make it to second year? "+
-              "The Eisner Award-nominated series from John Allison (Bad Machinery, Scary Go Round) with artist "+
-              "Max Sarin delivers another delightful slice-of-life adventure in Giant Days Volume 4. Collects "+
-              "issues 13-16. I’ve had a bit of a gap in my Giant Days reading, but this came up for review, and \
+        text: "'Giant Days Vol.4' \
+              is a springtime story at Sheffield University. Will Susan, Esther, and Daisy make it to summer? \
+              It is springtime at Sheffield University—the flowers are blooming, the birds are singing, and \
+              fast-pals Susan, Esther and Daisy continue to survive their freshman year of college. Susan \
+              is barely dealing with her recent breakup with McGraw, Esther is considering dropping out of \
+              school, and Daisy is trying to keep everyone and everyTHING from falling apart! Combined with \
+              house-hunting, indie film festivals, and online dating, can the girls make it to second year? \
+              The Eisner Award-nominated series from John Allison (Bad Machinery, Scary Go Round) with artist \
+              Max Sarin delivers another delightful slice-of-life adventure in Giant Days Volume 4. Collects \
+              issues 13-16. I’ve had a bit of a gap in my Giant Days reading, but this came up for review, and \
               I jumped at it. But I’m missing at least a volumes worth of events. And yet, I had no trouble getting \
               into this volume. No lengthy preamble was needed, nor really wanted, the story just gets off running, \
               and is so relatable that you pick up exactly who these characters are and what has happened easily. \
