@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="reset.css" type="text/css">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        Array.prototype.forEach.call(document.querySelectorAll("iframe"), function (element) {
+           element.addEventListener("load", function () {
+               console.log(element);
+               document.getElementById("iframe1").style.display = "none";
+               document.getElementById("iframe2").style.display = "none";
+               document.getElementById("zagruskaPng1").style.display = "inline-block";
+               document.getElementById("zagruskaPng2").style.display = "inline-block";
+        }, false);
+        });
+    }, false);
+    </script>
 </head>
 
 <body>
@@ -146,10 +159,12 @@
                     <h1 id="childrensTime"> Children's time</h1>
                 </div>
                 <div class="videosChild">
-                    <iframe width="320" height="240" src="https://www.youtube.com/embed/FwHviguVgyU" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="iframe1" width="320" height="240" src="https://www.youtube.com/embed/FwHviguVgyU" frameborder="0" allowfullscreen></iframe>
+                    <img id="zagruskaPng1" src="http://keepgreen.bg/sofiagreencapital/images/loading.gif">
                 </div>
                 <div class="videosChild">
-                    <iframe width="320" height="240" src="https://www.youtube.com/embed/TPLSfL5-Y3g" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="iframe2" width="320" height="240" src="https://www.youtube.com/embed/TPLSfL5-Y3g" frameborder="0" allowfullscreen></iframe>
+                    <img id="zagruskaPng2" src="http://keepgreen.bg/sofiagreencapital/images/loading.gif">
                 </div>
             </div>
 
@@ -197,14 +212,13 @@
                     <div class="centerA">
                         <p>
                             <img class="popularImages" src="images/slideImage0.jpg" alt="Saturday at sea">Saturdays at Sea<br>
-                            <span
-                                class="makeItalic">by Jessica Day George</span>
+                            <span class="makeItalic">by Jessica Day George</span>
                         </p>
                     </div>
                     <div class="centerA">
                         <p>
                             <img class="popularImages" src="images/slideImage1.jpg"> Pip Bartlett's Guide to Unicorn Training<br>
-                            <span class="makeItalic">by Jackson Pearce</span>
+                            <span class="makeItalic">by Jackson Pearce and Maggie Stiefvater</span>
                         </p>
                     </div>
                     <div class="centerA">
@@ -324,7 +338,7 @@
                         </a>
                     </div>
                     <div id="lastFooterWrap">
-                        <div id = "logoName">
+                        <div id="logoName">
                             <a href="#main">BooksAddict.bg<span> &copy; 2017</span></a>
                         </div>
                     </div>

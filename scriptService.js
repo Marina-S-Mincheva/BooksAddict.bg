@@ -110,8 +110,8 @@ for (var index = 0; index < books.length; index++) {
 
 var myText = [
     text1 = {
-        text: "'Giant Days Vol.4' " +
-              "is a springtime story at Sheffield University. Will Susan, Esther, and Daisy make it to summer? "+
+        text: "'Giant Days Vol.4'\n\
+               is a springtime story at Sheffield University. Will Susan, Esther, and Daisy make it to summer? "+
               "It is springtime at Sheffield University—the flowers are blooming, the birds are singing, and "+
               "fast-pals Susan, Esther and Daisy continue to survive their freshman year of college. Susan "+
               "is barely dealing with her recent breakup with McGraw, Esther is considering dropping out of "+
@@ -119,7 +119,15 @@ var myText = [
               "house-hunting, indie film festivals, and online dating, can the girls make it to second year? "+
               "The Eisner Award-nominated series from John Allison (Bad Machinery, Scary Go Round) with artist "+
               "Max Sarin delivers another delightful slice-of-life adventure in Giant Days Volume 4. Collects "+
-              "issues 13-16."
+              "issues 13-16. I’ve had a bit of a gap in my Giant Days reading, but this came up for review, and \
+              I jumped at it. But I’m missing at least a volumes worth of events. And yet, I had no trouble getting \
+              into this volume. No lengthy preamble was needed, nor really wanted, the story just gets off running, \
+              and is so relatable that you pick up exactly who these characters are and what has happened easily. \
+              It works for those who look forward to the heady university days, those currently in university, or \
+              those long out of the education experience, and looking for that nostalgic trip down memory lane. \
+              Here’s the thing: it doesn’t seem to matter where you went to university, the comically heightened \
+              scenarios presented in Giant Days are so universal, that you can read them and feel like it is exactly \
+              how university was for you."
     },
     text2 = {
         text: "'A piece of the world' \

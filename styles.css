@@ -22,7 +22,7 @@ body {
     width: 70%;
     height: 100%;
     position: absolute;
-    top: 20px;
+    top: 80px;
     left: 150px;
     background: url("images/backAbsolute.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -35,7 +35,7 @@ body {
 }
 #btn {
     position: absolute;
-    top: 600px;
+    top: 605px;
     right: 65px;
 }
 #divAbsolute #image{
@@ -50,8 +50,12 @@ body {
     display: inline-block;
     padding: 20px 20px;;
     font-size: 1.1em;
+    text-transform: capitalize;
+    color: #1a1a1a;
 }
-
+#divAbsolute p:first-letter {
+     text-transform: capitalize;
+}
 
 #scroller5 {
     position: absolute;
@@ -216,7 +220,7 @@ section {
 #banner2{
    display: block;
    width: 100%;
-   height: 3887px;
+   height: 3994px;
    background:url("images/advert2017.png") fixed;
    -webkit-background-size: 320px;
    -moz-background-size: 320px;
@@ -593,7 +597,6 @@ section {
 
 /*VIEDOS*/
 #videos {
-    /*padding-top: 10px;*/
     width: 100%;
 }
 .videosChild {
@@ -602,18 +605,39 @@ section {
     width: 50%;
     text-align: center;
     padding: 30px 0;
-    /*border-bottom: 3px double grey;*/
     box-sizing: border-box;
 }
 .videosChild iframe {
     border: 3px double grey;
     padding: 2px;
+    display: none;
+   
 }
+#zagruskaPng1 {
+    display: none;
+    /*top: 2410px;
+    right: 250px;  */
+}
+#zagruskaPng2  {
+   display: none;
+    /*top: 2410px;
+    left: 10px;*/
+}
+
+
+
+
+
+
+
+
+
 
 /*slideShow*/
 #childrenBook {
-    background-color: sandybrown;
+    /*background-color: sandybrown;*/
     /*padding-top: 20px;*/
+    
 }
 #slideShow {
     display: inline-block;
@@ -742,7 +766,7 @@ section {
 #image2{
     display: block;
     float: left;
-    margin: 10px 15px 5px 10px;
+    margin: 10px 15px 7px 10px;
     width: 280px;
     height: 300px;
     box-shadow: 5px 5px 5px #222;
@@ -752,10 +776,12 @@ section {
     /*float: left;*/
     padding: 20px 0;
     text-align: center;
+    font-size: 2em;
 }
 #newP2 {
     display: block;
     text-align: left;
+    font-size: 1.1em;
     /*margin-left: 155px;*/
     /*padding: 0px 40px;*/
 }
