@@ -23,350 +23,575 @@
 </head>
 
 <body>
-    <div id="banner">
-        <div id="banner2"></div>
-    </div>
-    <div id="main">
-        <section id="firstSection">
-            <div id="wrapper">
-                <div id="firstMainDiv">
-                    <a>
-                        <span>
-                        <div>
-                            <img>
-                        </div>
-                        </span>
-                    </a>
-                    <div>
-                        <div>
-                            <span></span>
-                            <div>
-                                <span></span>
+    <header>
+        <div class="top">
+            <h1><a href="home" rel="local">BooksAddict.bg</a></h1>
+            <ul>
+                <li id="current-user" class="hidden"></li>
+                <li id="login-button">
+                    <a href="login" rel="local">Login</a>
+                </li>
+                <li id="logout-button" class="hidden">
+                    <a href="logout" rel="local">Logout</a>
+                </li>
+                <li id="registration-button">
+                    <a href="registration" rel="local">Registration</a>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <a href="home" class="active" rel="local">Home</a>
+            <a href="#">Classics</a>
+            <a href="#">Children's</a>
+            <a href="#">Comics</a>
+            <a href="#">Cookbooks</a>
+            <a href="#">Crime</a>
+            <a href="#">Fantasy</a>
+            <a href="#">Horror</a>
+            <a href="#">Mystery</a>
+            <a href="#">Religion</a>
+            <a href="#">Paranormal</a>
+            <a href="#">Poetry</a>
+            <a href="#">Science</a>
+        </nav>
+    </header>
+
+    <div id="pageContent">
+        <section id="page-registration" class="page">
+          <h1>Registration</h1>
+          <form>
+            <p class="hidden error" id="reg-error"></p>
+            <div>
+              <label>Name</label>
+              <input id="reg-name" />
+            </div>
+            <div>
+              <label>Password</label>
+              <input id="reg-pass" type="password" />
+            </div>
+            <input type="submit" value="Save" />
+          </form>
+        </section>
+        <section id="page-login" class="page">
+          <h1>Login</h1>
+          <form>
+            <p class="hidden error" id="login-error"></p>
+            <div>
+              <label>Name</label>
+              <input id="login-name" />
+            </div>
+            <div>
+              <label>Password</label>
+              <input id="login-pass" type="password" />
+            </div>
+            <input type="submit" value="Login" />
+          </form>
+          <p>If you don't have a profile please <a href="registration" rel="local">register here</a></p>
+        </section>
+        <section id="page-logout" class="page">
+          <h1>See you soon!</h1>
+        </section>
+        <section id="page-404" class="page">
+          <h1>Error 404. Page not found.</h1>
+        </section>
+        <section id="page-home" class="active">
+            <section class="onFocus">
+                <h2>On focus</h2>
+                <ol>
+                    <li>
+                        <a href="#">
+                            <img alt="Memoirs of a Geisha by Arthur Golden" title="Memoirs of a Geisha by Arthur Golden" width="80" class="bookImgSimilar" src="https://images.gr-assets.com/books/1409595968m/929.jpg">
+                        </a>
+                        <h3><a href="#">Memoirs of a Geisha</a></h3>
+                        <p>by <a href="#">Arthur Golden</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img alt="The Guernsey Literary and Potato Peel Pie Society by Mary Ann Shaffer" title="The Guernsey Literary and Potato Peel Pie Society by Mary Ann Shaffer" width="80" class="bookImgSimilar" src="https://images.gr-assets.com/books/1351979318m/2728527.jpg">
+                        </a>
+                        <h3><a href="#">The Guernsey Literary and Potato Peel Pie Society</a></h3>
+                        <p>by <a href="#">Mary Ann Shaffer</a>, <a href="#">Annie Barrows</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img alt="Water for Elephants by Sara Gruen" title="Water for Elephants by Sara Gruen" width="80" class="bookImgSimilar" src="https://images.gr-assets.com/books/1388183358m/43641.jpg">
+                        </a>
+                        <h3><a href="#">Water for Elephants</a></h3>
+                        <p>by <a href="#">Sara Gruen</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img alt="The Help by Kathryn Stockett" title="The Help by Kathryn Stockett" width="80" class="bookImgSimilar" src="https://images.gr-assets.com/books/1346100365m/4667024.jpg">
+                        </a>
+                        <h3><a href="#">The Help</a></h3>
+                        <p>by <a href="#">Kathryn Stockett</a></p>
+                    </li>
+                </ol>
+            </section>
+
+            <div class="main clear">
+                <div class="column-left">
+                    
+                    <hr />
+
+                    <section class="topNews">
+                        <div class="column">
+                            <a href="#" class="main">
+                                <img src="https://images.gr-assets.com/books/1344845094l/12440737.jpg">
+                                <p>HTML5: Everyone’s using it, nobody knows what it is.</p>
+                            </a>
+                            <div class="carusel">
+                                <a href="#" class="button disabled left">&#9664;</a>
+                                <a href="#" class="button disabled right">&#9654;</a>
+                                <ol>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://images.gr-assets.com/books/1388800064l/9648068.jpg">
+                                            <p>The First Days (As the World Dies #1)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://images.gr-assets.com/books/1408500437l/7094569.jpg">
+                                            <p>Feed (Newsflesh #1)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://images.gr-assets.com/books/1264898635l/7157310.jpg">
+                                            <p>Rot &amp; Ruin (Rot &amp; Ruin #1)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://images.gr-assets.com/books/1265814659l/7716140.jpg">
+                                            <p>Married with Zombies (Living With the Dead #1)</p>
+                                        </a>
+                                    </li>
+                                </ol>
                             </div>
                         </div>
+                        <div class="column">
+                            <a href="#" class="main">
+                                <img src="https://images.gr-assets.com/books/1328834899l/148051.jpg">
+                                <p>...lucid, in-depth descriptions of the behavior of every HTML tag on every major browser and platform</p>
+                            </a>
+                            <div class="carusel">
+                                <a href="#" class="button disabled left">&#9664;</a>
+                                <a href="#" class="button disabled right">&#9654;</a>
+                                <ol>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://images.gr-assets.com/books/1473473210l/31932229.jpg">
+                                            <p>Enslaved</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://images.gr-assets.com/books/1327963811l/11222793.jpg">
+                                            <p>The Man Who Holds The Whip</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://images.gr-assets.com/books/1362107355l/17264796.jpg">
+                                            <p>Take Me, Break Me (Pierced Hearts #1)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://images.gr-assets.com/books/1413569761l/23388781.jpg">
+                                            <p>Undefeated (Fighter Erotic Romance #1)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://images.gr-assets.com/books/1421689217l/24580584.jpg">
+                                            <p>Perfectly Flawed (Sexy &amp; Dangerous #3)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://images.gr-assets.com/books/1372790889l/17854691.jpg">
+                                            <p>Damaged and the Knight (Damaged #2)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://images.gr-assets.com/books/1347834062l/481899.jpg">
+                                            <p>Thong on Fire: An Urban Erotic Tale</p>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr />
+                    
+                    <section id="firstSection">
+                        <div id="wrapper">
+                            <div id="firstMainDiv">
+                                <a>
+                                    <span>
+                                        <div>
+                                            <img>
+                                        </div>
+                                    </span>
+                                </a>
+                                <div>
+                                    <div>
+                                        <span></span>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div id="divAbsolute">
+                        <img id="image" src="">
+                        <p id="newP"></p>
+                        <button id="btn">Back</button>
+                        <a href="" id="fancyScroll">
+                            <div id="scroller5"></div>
+                        </a>
+                        <div id="scroller6">
+                            <a class="" id="fancyScroll" href="#"></a>
+                        </div>
+                        <div id="scroller7">
+                            <a class="" href="#"></a>
+                        </div>
+                    </div>
+
+                    <hr />
+                    
+                    <section id="redaction" class="clear">
+                        <!--<div id="divForAbsDiv">-->
+                        <div class="backTitles">
+                            <h1 id="arrow" href="#">
+                                Best fantasy books
+                                <!--<img src="images/arrow.png"/>-->
+                                <span id="span2016">for 2016</span>
+                            </h1>
+                        </div>
+                        <div class="redaction-wrapper">
+                            <div class="roundedPic">
+                                <a href="">
+                                    <div class="a effects">
+
+                                    </div>
+                                    <span id="0a" class="hoverDiv">While Harry grapples with a past that refuses to stay where it belongs, 
+                                          his youngest son Albus must struggle with the weight of a family legacy he never wanted.</span>
+                                </a>
+                            </div>
+                            <div class="roundedPic">
+                                <a href="">
+                                    <div class="b effects">
+
+                                    </div>
+                                    <span id="1b" class="hoverDiv">Now, restless after having given up his smuggling habit, Kell is visited by dreams of ominous magical events, 
+                                         waking only to think of Lila, who disappeared from the docks as she always meant to do.  </span>
+                                </a>
+                            </div>
+                            <div class="roundedPic">
+                                <a href="">
+                                    <div class="c effects">
+
+                                    </div>
+                                    <span id="2c" class="hoverDiv">Waxillium Ladrian is recruited to travel south to the city of New Seran to investigate. Along the way he discovers 
+                                          hints that point to the true goals of his uncle Edwarn and the shadowy organization known as The Set.</span>
+                                </a>
+                            </div>
+                            <div class="roundedPic">
+                                <a href="">
+                                    <div class="d effects">
+                                    </div>
+                                    <span id="3d" class="hoverDiv">When the immortal race of the Fae destroyed the ancient wall dividing the worlds of Man and Faery, the very fabric 
+                                          of the universe was damaged and now Earth is vanishing bit by bit. Who can save the planet?</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="contHoverDiv1">
+                            <p class="p1"></p>
+                            <p class="p2"></p>
+                        </div>
+                        <div id="contHoverDiv2">
+                            <p class="p1"></p>
+                            <p class="p2"></p>
+                        </div>
+                        <div id="contHoverDiv3">
+                            <p class="p1"></p>
+                            <p class="p2"></p>
+                        </div>
+                        <div id="contHoverDiv4">
+                            <p class="p1"></p>
+                            <p class="p2"></p>
+                        </div>
+                    </section>
+
+                    <hr>
+
+                    <section id="cookingBooks">
+                        <div class="backTitles">
+                            <h1 id="cook"> Time for cooking...and online reading...</h1>
+                        </div>
+                        <div id="wrapImgJS">
+                            <div class="pics">
+                                <div id="scroller">
+                                    <a class="text" href="https://www.goodreads.com/book/show/25982685-cravings?from_search=true" target="_blank">'Cravings: Recipes for All the Food You Want to Eat'</a>
+                                </div>
+                            </div>
+                            <div class="pics">
+                                <div id="scroller2">
+                                    <a class="text" href="https://www.goodreads.com/book/show/26832930-outlander-kitchen?from_search=true" target="_blank">'Outlander Kitchen: The Official Outlander Companion Cookbook' </a>
+                                </div>
+                            </div>
+                            <div id="asideDiv">
+                                <div id="scroller3">
+                                    <a class="text" href="https://www.goodreads.com/book/show/26240710-layered?from_search=true" target="_blank">'Layered: Baking, Building, and Styling Spectacular Cakes'</a>
+                                </div>
+                                <div id="scroller4">
+                                    <a class="text" href="https://www.goodreads.com/book/show/26247044-raw-vegan-not-gross?from_search=true" target="_blank">'Raw. Vegan. Not Gross.: All Vegan and Mostly Raw Recipes for People Who Love to Eat' </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr>
+
+                    <section id="childrenBook">
+                        <div id="videos">
+                            <div class="backTitles">
+                                <h1 id="childrensTime"> Children's time</h1>
+                            </div>
+                            <div class="videosChild">
+                                <iframe id="iframe1" width="320" height="240" src="https://www.youtube.com/embed/FwHviguVgyU" frameborder="0" allowfullscreen></iframe>
+                                <img id="zagruskaPng1" src="http://keepgreen.bg/sofiagreencapital/images/loading.gif">
+                            </div>
+                            <div class="videosChild">
+                                <iframe id="iframe2" width="320" height="240" src="https://www.youtube.com/embed/TPLSfL5-Y3g" frameborder="0" allowfullscreen></iframe>
+                                <img id="zagruskaPng2" src="http://keepgreen.bg/sofiagreencapital/images/loading.gif">
+                            </div>
+                        </div>
+
+                        <div id="slideShow">
+                            <a href="https://www.goodreads.com/book/show/28110143-furthermore?from_search=true" target="_blank">
+                                <div class="mySlides">
+                                    <img src="images/slideImg1.jpg">
+                                    <p>Inspired by her childhood love of books like 'The Secret Garden and The Chronicles of Narnia', bestselling
+                                        author Tahereh Mafi crafts a spellbinding new world where color is currency, adventure is inevitable,
+                                        and friendship is found in the most unexpected places.</p>
+                                </div>
+                            </a>
+                            <a href="https://www.goodreads.com/search?q=the+land+of+stories" target="_blank">
+                                <div class="mySlides">
+                                    <img src="images/slideImg2.jpg">
+                                    <p>The Land of Stories tells the tale of twins Alex and Conner. They leave their world behind and find
+                                        themselves in a foreign land full of wonder and magic where they come face-to-face with the fairy
+                                        tale characters they grew up reading about.</p>
+                                </div>
+                            </a>
+                            <a href="https://www.goodreads.com/book/show/1728744.Sleeping_Beauty?from_search=true" target="_blank">
+                                <div class="mySlides">
+                                    <img src="images/slideImg3.jpg">
+                                    <p>The story of the beautiful princess who sleeps for a hundred years has captured the imaginations
+                                        of children for an even longer period of time. How could everyone in a castle - even the flies
+                                        on the walls - sleep for a century and then wake up?</p>
+                                </div>
+                            </a>
+                            <a href="https://www.goodreads.com/search?q=harry+potter" target="_blank">
+                                <div class="mySlides">
+                                    <img src="images/slideImg4.jpg">
+                                    <p>Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives,
+                                        who force him to live in a tiny closet under the stairs. But his fortune changes when he receives
+                                        a letter that tells him the truth about himself: he's a wizard.</p>
+                                </div>
+                            </a>
+                            <div id="btns">
+                                <button id="button-left" onclick="plusDivs(-1)">&#10094;</button>
+                                <button id="button-right" onclick="plusDivs(1)">&#10095;</button>
+                            </div>
+                        </div>
+
+                        <div id="weekBooks">
+                            <h1 id="mostPopularChildrensBooks">The most popular children's book of the week:</h1>
+                            <div class="popularWeekBook clear">
+                                <div class="centerA">
+                                    <p>
+                                        <img class="popularImages" src="images/slideImage0.jpg" alt="Saturday at sea">Saturdays at Sea<br>
+                                        <span class="makeItalic">by Jessica Day George</span>
+                                    </p>
+                                </div>
+                                <div class="centerA">
+                                    <p>
+                                        <img class="popularImages" src="images/slideImage1.jpg"> Pip Bartlett's Guide to Unicorn Training<br>
+                                        <span class="makeItalic">by Jackson Pearce and Maggie Stiefvater</span>
+                                    </p>
+                                </div>
+                                <div class="centerA">
+                                    <p>
+                                        <img class="popularImages" src="images/slideImage2.jpg"> Bunny's Book Club<br><span class="makeItalic">by Annie Silvestro</span></p>
+                                </div>
+                                <div class="centerA">
+                                    <p>
+                                        <img class="popularImages" src="images/slideImage3.jpg"> The Dragon with a Chocolate Heart<br>
+                                        <span class="makeItalic">by Stephanie Burgis</span>
+                                    </p>
+                                </div>
+                                <div class="centerA">
+                                    <p>
+                                        <img class="popularImages" src="images/slideImage4.jpg"> Simon Thorn and the Viper's Pit<br>
+                                        <span class="makeItalic">by Aimee Carter</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <hr>
+
+                    <div id="needed">
+                        <div id="divAbsolute2">
+                            <img id="image2" src="">
+                            <p id="newP1"></p>
+                            <p id="newP2"></p>
+                            <button id="btn2">Back</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column-right">
+                    <div id="banner">
+                        <div id="banner2"></div>
                     </div>
                 </div>
+            </div>
         </section>
-        <div id="divAbsolute">
-            <img id="image" src="">
-            <p id="newP"></p>
-            <button id="btn">Back</button>
-            <a href="" id="fancyScroll">
-                <div id="scroller5">
-            </a>
-            </div>
-            <div id="scroller6">
-                <a class="" id="fancyScroll" href="#"></a>
-            </div>
-            <div id="scroller7">
-                <a class="" href="#"></a>
-            </div>
-        </div>
-        </div>
-        <section id="redaction">
-            <!--<div id="divForAbsDiv">-->
-            <div class="backTitles">
-                <h1 id="arrow" href="#">
-                    Best fantasy books
-                    <!--<img src="images/arrow.png"/>-->
-                    <span id="span2016">for 2016</span>
-                </h1>
-            </div>
-            <div class="redaction-wrapper">
-                <div class="roundedPic">
-                    <a href="">
-                        <div class="a effects">
-
-                        </div>
-                        <span id="0a" class="hoverDiv">While Harry grapples with a past that refuses to stay where it belongs, 
-                              his youngest son Albus must struggle with the weight of a family legacy he never wanted.</span>
-                    </a>
-                </div>
-                <div class="roundedPic">
-                    <a href="">
-                        <div class="b effects">
-
-                        </div>
-                        <span id="1b" class="hoverDiv">Now, restless after having given up his smuggling habit, Kell is visited by dreams of ominous magical events, 
-                             waking only to think of Lila, who disappeared from the docks as she always meant to do.  </span>
-                    </a>
-                </div>
-                <div class="roundedPic">
-                    <a href="">
-                        <div class="c effects">
-
-                        </div>
-                        <span id="2c" class="hoverDiv">Waxillium Ladrian is recruited to travel south to the city of New Seran to investigate. Along the way he discovers 
-                              hints that point to the true goals of his uncle Edwarn and the shadowy organization known as The Set.</span>
-                    </a>
-                </div>
-                <div class="roundedPic">
-                    <a href="">
-                        <div class="d effects">
-                        </div>
-                        <span id="3d" class="hoverDiv">When the immortal race of the Fae destroyed the ancient wall dividing the worlds of Man and Faery, the very fabric 
-                              of the universe was damaged and now Earth is vanishing bit by bit. Who can save the planet?</span>
-                    </a>
-                </div>
-            </div>
-            <div id="contHoverDiv1">
-                <p class="p1"></p>
-                <p class="p2"></p>
-            </div>
-            <div id="contHoverDiv2">
-                <p class="p1"></p>
-                <p class="p2"></p>
-            </div>
-            <div id="contHoverDiv3">
-                <p class="p1"></p>
-                <p class="p2"></p>
-            </div>
-            <div id="contHoverDiv4">
-                <p class="p1"></p>
-                <p class="p2"></p>
-            </div>
-        </section>
-
-        <!--</div>-->
-        <section id="cookingBooks">
-            <div class="backTitles">
-                <h1 id="cook"> Time for cooking...and online reading...</h1>
-            </div>
-            <div id="wrapImgJS">
-                <div class="pics">
-                    <div id="scroller">
-                        <a class="text" href="https://www.goodreads.com/book/show/25982685-cravings?from_search=true" target="_blank">'Cravings: Recipes for All the Food You Want to Eat'</a>
-                    </div>
-                </div>
-                <div class="pics">
-                    <div id="scroller2">
-                        <a class="text" href="https://www.goodreads.com/book/show/26832930-outlander-kitchen?from_search=true" target="_blank">'Outlander Kitchen: The Official Outlander Companion Cookbook' </a>
-                    </div>
-                </div>
-                <div id="asideDiv">
-                    <div id="scroller3">
-                        <a class="text" href="https://www.goodreads.com/book/show/26240710-layered?from_search=true" target="_blank">'Layered: Baking, Building, and Styling Spectacular Cakes'</a>
-                    </div>
-                    <div id="scroller4">
-                        <a class="text" href="https://www.goodreads.com/book/show/26247044-raw-vegan-not-gross?from_search=true" target="_blank">'Raw. Vegan. Not Gross.: All Vegan and Mostly Raw Recipes for People Who Love to Eat' </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="childrenBook">
-            <div id="videos">
-                <div class="backTitles">
-                    <h1 id="childrensTime"> Children's time</h1>
-                </div>
-                <div class="videosChild">
-                    <iframe id="iframe1" width="320" height="240" src="https://www.youtube.com/embed/FwHviguVgyU" frameborder="0" allowfullscreen></iframe>
-                    <img id="zagruskaPng1" src="http://keepgreen.bg/sofiagreencapital/images/loading.gif">
-                </div>
-                <div class="videosChild">
-                    <iframe id="iframe2" width="320" height="240" src="https://www.youtube.com/embed/TPLSfL5-Y3g" frameborder="0" allowfullscreen></iframe>
-                    <img id="zagruskaPng2" src="http://keepgreen.bg/sofiagreencapital/images/loading.gif">
-                </div>
-            </div>
-
-            <div id="slideShow">
-                <a href="https://www.goodreads.com/book/show/28110143-furthermore?from_search=true" target="_blank">
-                    <div class="mySlides">
-                        <img src="images/slideImg1.jpg">
-                        <p>Inspired by her childhood love of books like 'The Secret Garden and The Chronicles of Narnia', bestselling
-                            author Tahereh Mafi crafts a spellbinding new world where color is currency, adventure is inevitable,
-                            and friendship is found in the most unexpected places.</p>
-                    </div>
-                </a>
-                <a href="https://www.goodreads.com/search?q=the+land+of+stories" target="_blank">
-                    <div class="mySlides">
-                        <img src="images/slideImg2.jpg">
-                        <p>The Land of Stories tells the tale of twins Alex and Conner. They leave their world behind and find
-                            themselves in a foreign land full of wonder and magic where they come face-to-face with the fairy
-                            tale characters they grew up reading about.</p>
-                    </div>
-                </a>
-                <a href="https://www.goodreads.com/book/show/1728744.Sleeping_Beauty?from_search=true" target="_blank">
-                    <div class="mySlides">
-                        <img src="images/slideImg3.jpg">
-                        <p>The story of the beautiful princess who sleeps for a hundred years has captured the imaginations
-                            of children for an even longer period of time. How could everyone in a castle - even the flies
-                            on the walls - sleep for a century and then wake up?</p>
-                    </div>
-                </a>
-                <a href="https://www.goodreads.com/search?q=harry+potter" target="_blank">
-                    <div class="mySlides">
-                        <img src="images/slideImg4.jpg">
-                        <p>Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives,
-                            who force him to live in a tiny closet under the stairs. But his fortune changes when he receives
-                            a letter that tells him the truth about himself: he's a wizard.</p>
-                    </div>
-                </a>
-                <div id="btns">
-                    <button id="button-left" onclick="plusDivs(-1)">&#10094;</button>
-                    <button id="button-right" onclick="plusDivs(1)">&#10095;</button>
-                </div>
-            </div>
-            <div id="weekBooks">
-                <h1 id="mostPopularChildrensBooks">The most popular children's book of the week:</h1>
-                <div class="popularWeekBook">
-                    <div class="centerA">
-                        <p>
-                            <img class="popularImages" src="images/slideImage0.jpg" alt="Saturday at sea">Saturdays at Sea<br>
-                            <span class="makeItalic">by Jessica Day George</span>
-                        </p>
-                    </div>
-                    <div class="centerA">
-                        <p>
-                            <img class="popularImages" src="images/slideImage1.jpg"> Pip Bartlett's Guide to Unicorn Training<br>
-                            <span class="makeItalic">by Jackson Pearce and Maggie Stiefvater</span>
-                        </p>
-                    </div>
-                    <div class="centerA">
-                        <p>
-                            <img class="popularImages" src="images/slideImage2.jpg"> Bunny's Book Club<br><span class="makeItalic">by Annie Silvestro</span></p>
-                    </div>
-                    <div class="centerA">
-                        <p>
-                            <img class="popularImages" src="images/slideImage3.jpg"> The Dragon with a Chocolate Heart<br>
-                            <span class="makeItalic">by Stephanie Burgis</span>
-                        </p>
-                    </div>
-                    <div class="centerA">
-                        <p>
-                            <img class="popularImages" src="images/slideImage4.jpg"> Simon Thorn and the Viper's Pit<br>
-                            <span class="makeItalic">by Aimee Carter</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <div id="needed">
-            <div id="divAbsolute2">
-                <img id="image2" src="">
-                <p id="newP1"></p>
-                <p id="newP2"></p>
-                <button id="btn2">Back</button>
-            </div>
-        </div>
-        <footer>
-            <section id="thumb">
-                <div id="footer1">
-                    <div class="footer1Div">
-                        <a href="http://www.audiobooks.com/" target="_blank">
-                            <span class="titleThumb">Audio books
-                            <img class = "arrowThumb" src="images/arrow.png"/>
-                            </span>
-                            <img class="thumbnail1" src="images/audiobooks1.jpg" alt="Audio books" />
-                            <span class="textThumb">Listen your favourite book for free</span>
-                        </a>
-                    </div>
-                    <div class="footer1Div">
-                        <a href="https://www.webuybooks.co.uk/" target="_blank">
-                            <span class="titleThumb">Sell books
-                            <img class = "arrowThumb" src="images/arrow.png"/>
-                        </span>
-                            <img class="thumbnail2" src="images/webuybooks.jpg" alt="Audio books" />
-                            <span class="textThumb">You want to sell your old books?</span>
-                        </a>
-                    </div>
-                    <div class="footer1Div">
-                        <a href="http://www.writersdigest.com/" target="_blank">
-                            <span class="titleThumb">Write a book
-                            <img class = "arrowThumb" src="images/arrow.png"/>
-                        </span>
-                            <img class="thumbnail3" src="images/writersdigets.png" alt="Writers digest" />
-                            <span class="textThumb">Write and public your first book</span>
-                        </a>
-                    </div>
-                    <div class="footer1Div">
-                        <a href="https://www.bookdepository.com/" target="_blank">
-                            <span class="titleThumb">Buy a book
-                            <img class = "arrowThumb" src="images/arrow.png"/>
-                        </span>
-                            <img class="thumbnail1" src="images/bookdepository.jpg" alt="Book depository" />
-                            <span class="textThumb">Buy a book with free delivery</span>
-                        </a>
-                    </div>
-                    <div class="footer1Div">
-                        <a href="https://www.fastpencil.com/" target="_blank">
-                            <span class="titleThumb">Publish your book
-                            <img class = "arrowThumb" src="images/arrow.png"/>
-                        </span>
-                            <img class="thumbnail2" src="images/fastpencil.png" alt="Fast pencil" />
-                            <span class="textThumb">Fast publishing and selling to your book</span>
-                        </a>
-                    </div>
-                    <div class="footer1Div">
-                        <a href="http://jokes.cc.com/" target="_blank">
-                            <span class="titleThumb">Have fun
-                            <img class = "arrowThumb" src="images/arrow.png"/>
-                        </span>
-                            <img class="thumbnail3" src="images/jokes.gif" alt="Jokes for fun" />
-                            <span class="textThumb">Do not forget to smile</span>
-                        </a>
-                    </div>
-                </div>
-                <div id="details1">
-                    <img src="" alt="" />
-                </div>
-                <div id="details2">
-                    <img src="" alt="" />
-                </div>
-                <div id="details3">
-                    <img src="" alt="" />
-                </div>
-            </section>
-            <section id="middleSection">
-                <div id="middleFooterWrap">
-                    <div class="middleFooter">
-                        <a href="#"><img class="colorImage" src="images/email.png" alt="Email us"></a>
-                    </div>
-                    <div class="middleFooter">
-                        <a href="#"><img class="colorImage" src="images/linkedin.png" alt="Linkedin"></a>
-                    </div>
-                    <div class="middleFooter">
-                        <a href="#"><img class="colorImage" src="images/facebook.png" alt="Facebook"></a>
-                    </div>
-                </div>
-            </section>
-            <section id="lastFooter">
-                <div id="lastDivFooter">
-                    <div id="logoPNG">
-                        <a href="#main">
-                            <img src="images/logo.png" alt="Logo BooksAddict">
-                        </a>
-                    </div>
-                    <div id="lastFooterWrap">
-                        <div id="logoName">
-                            <a href="#main">BooksAddict.bg<span> &copy; 2017</span></a>
-                        </div>
-                    </div>
-                    <div id="verticalLine">
-                        <a href="#">
-                        Terms
-                    </a>
-                        <a href="#">
-                        Privacy
-                    </a>
-                        <a href="#">
-                        Contact BooksAddict
-                    </a>
-                        <a href="#">
-                        Blog
-                    </a>
-                        <a href="#">
-                        About
-                    </a>
-                    </div>
-                </div>
-            </section>
-        </footer>
-        <script src="scripts.js"></script>
-        <script src="scriptService.js"></script>
-
     </div>
-    <!--main-->
+      
+    <footer>
+        <section id="thumb">
+            <div id="footer1">
+                <div class="footer1Div">
+                    <a href="http://www.audiobooks.com/" target="_blank">
+                        <span class="titleThumb">Audio books
+                        <img class = "arrowThumb" src="images/arrow.png"/>
+                        </span>
+                        <img class="thumbnail1" src="images/audiobooks1.jpg" alt="Audio books" />
+                        <span class="textThumb">Listen your favourite book for free</span>
+                    </a>
+                </div>
+                <div class="footer1Div">
+                    <a href="https://www.webuybooks.co.uk/" target="_blank">
+                        <span class="titleThumb">Sell books
+                        <img class = "arrowThumb" src="images/arrow.png"/>
+                    </span>
+                        <img class="thumbnail2" src="images/webuybooks.jpg" alt="Audio books" />
+                        <span class="textThumb">You want to sell your old books?</span>
+                    </a>
+                </div>
+                <div class="footer1Div">
+                    <a href="http://www.writersdigest.com/" target="_blank">
+                        <span class="titleThumb">Write a book
+                        <img class = "arrowThumb" src="images/arrow.png"/>
+                    </span>
+                        <img class="thumbnail3" src="images/writersdigets.png" alt="Writers digest" />
+                        <span class="textThumb">Write and public your first book</span>
+                    </a>
+                </div>
+                <div class="footer1Div">
+                    <a href="https://www.bookdepository.com/" target="_blank">
+                        <span class="titleThumb">Buy a book
+                        <img class = "arrowThumb" src="images/arrow.png"/>
+                    </span>
+                        <img class="thumbnail1" src="images/bookdepository.jpg" alt="Book depository" />
+                        <span class="textThumb">Buy a book with free delivery</span>
+                    </a>
+                </div>
+                <div class="footer1Div">
+                    <a href="https://www.fastpencil.com/" target="_blank">
+                        <span class="titleThumb">Publish your book
+                        <img class = "arrowThumb" src="images/arrow.png"/>
+                    </span>
+                        <img class="thumbnail2" src="images/fastpencil.png" alt="Fast pencil" />
+                        <span class="textThumb">Fast publishing and selling to your book</span>
+                    </a>
+                </div>
+                <div class="footer1Div">
+                    <a href="http://jokes.cc.com/" target="_blank">
+                        <span class="titleThumb">Have fun
+                        <img class = "arrowThumb" src="images/arrow.png"/>
+                    </span>
+                        <img class="thumbnail3" src="images/jokes.gif" alt="Jokes for fun" />
+                        <span class="textThumb">Do not forget to smile</span>
+                    </a>
+                </div>
+            </div>
+            <div id="details1">
+                <img src="" alt="" />
+            </div>
+            <div id="details2">
+                <img src="" alt="" />
+            </div>
+            <div id="details3">
+                <img src="" alt="" />
+            </div>
+        </section>
+        <section id="middleSection">
+            <div id="middleFooterWrap">
+                <div class="middleFooter">
+                    <a href="#"><img class="colorImage" src="images/email.png" alt="Email us"></a>
+                </div>
+                <div class="middleFooter">
+                    <a href="#"><img class="colorImage" src="images/linkedin.png" alt="Linkedin"></a>
+                </div>
+                <div class="middleFooter">
+                    <a href="#"><img class="colorImage" src="images/facebook.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </section>
+        <section id="lastFooter">
+            <div id="lastDivFooter" class="clear">
+                <div id="logoPNG">
+                    <a href="#main">
+                        <img src="images/logo.png" alt="Logo BooksAddict">
+                    </a>
+                </div>
+                <div id="lastFooterWrap">
+                    <div id="logoName">
+                        <a href="#main">BooksAddict.bg<span> &copy; 2017</span></a>
+                    </div>
+                </div>
+                <div id="verticalLine">
+                    <a href="#">
+                    Terms
+                </a>
+                    <a href="#">
+                    Privacy
+                </a>
+                    <a href="#">
+                    Contact BooksAddict
+                </a>
+                    <a href="#">
+                    Blog
+                </a>
+                    <a href="#">
+                    About
+                </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+    <script src="App.js"></script>
+    <script src="scripts.js"></script>
+    <script src="scriptService.js"></script>
+    <script type="text/javascript">
+        new App();
+    </script>
 
 </body>
 

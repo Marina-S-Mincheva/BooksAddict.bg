@@ -348,4 +348,43 @@ Array.prototype.forEach.call(document.querySelectorAll("iframe"), function (elem
             document.getElementById("zagruskaPng2").style.display = "none";
         }, 1000);
     }, false);
-})
+});
+
+
+// Когато преключи лоадване на страница...
+document.addEventListener("DOMContentLoaded", function () {
+    function checkCaruselButtonState(elementsWrapper, buttonLeft, buttonRight) {
+        buttonLeft.classList.remove('disabled');
+        buttonRight.classList.remove('disabled');
+
+        if (elementsWrapper.offsetWidth + elementsWrapper.scrollLeft >= elementsWrapper.scrollWidth) {
+            buttonRight.classList.add('disabled');
+        }
+
+        if (elementsWrapper.scrollLeft === 0) {
+            buttonLeft.classList.add('disabled');
+        }
+    }
+
+    document.querySelectorAll('.carusel').forEach(function(container) {
+        var buttonLeft = container.querySelector('.left');
+        var buttonRight = container.querySelector('.right');
+        var elementsWrapper = container.querySelector('ol');
+
+        checkCaruselButtonState(elementsWrapper, buttonLeft, buttonRight);
+
+        buttonLeft.addEventListener('click', function(event) {
+            event.preventDefault();
+            elementsWrapper.scrollLeft = elementsWrapper.scrollLeft - elementsWrapper.clientWidth;
+            
+            checkCaruselButtonState(elementsWrapper, buttonLeft, buttonRight);
+        });
+
+        buttonRight.addEventListener('click', function(event) {
+            event.preventDefault();
+            elementsWrapper.scrollLeft = elementsWrapper.scrollLeft + elementsWrapper.clientWidth;
+
+            checkCaruselButtonState(elementsWrapper, buttonLeft, buttonRight); 
+        });
+    });
+});
